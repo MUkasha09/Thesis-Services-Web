@@ -293,8 +293,8 @@ function ContactSection() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    const body = `Hi RESEARCH EDGE CONSULTING,%0A%0AName: ${form.name}%0AEmail: ${form.email}%0AService: ${form.service}%0ADeadline: ${form.deadline}%0A%0AMessage: ${form.message}`;
-    window.open(`${WHATSAPP}?text=${body}`, '_blank');
+    const body = `Hi RESEARCH EDGE CONSULTING,\n\nName: ${form.name}\nEmail: ${form.email}\nService: ${form.service}\nDeadline: ${form.deadline}\n\nTopic / Project details: ${form.message}`;
+    window.open(`${WHATSAPP}?text=${encodeURIComponent(body)}`, '_blank');
     setSent(true);
     setTimeout(() => setSent(false), 4000);
   };
