@@ -1,1 +1,5 @@
-﻿{"name":"scholarpro-landing","version":"1.0.0","private":true,"scripts":{"build":"echo \"No build required for static HTML deployment\"","dev":"vercel dev"}}
+{
+  "name":"scholarpro-landing",
+  "private":true,
+  "version":"1.0.0"
+}
