@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>ScholarPro — Expert Academic Writing Services</title>
+<title>RESEARCH EDGE CONSULTING — Expert Academic Writing Services</title>
 <meta name="description" content="Professional research paper writing, thesis support, literature reviews, data analysis and proofreading for students and academics worldwide."/>
-<meta property="og:title" content="ScholarPro — Expert Academic Writing Services"/>
+<meta property="og:title" content="RESEARCH EDGE CONSULTING — Expert Academic Writing Services"/>
 <meta property="og:description" content="From undergraduate essays to PhD dissertations — delivered on time, plagiarism-free."/>
 <meta property="og:type" content="website"/>
 
@@ -104,7 +104,7 @@ const { useState, useEffect, useRef } = React;
 
 /* ─── DATA ─────────────────────────────────────────── */
 
-const BRAND = 'ScholarPro';
+const BRAND = 'RESEARCH EDGE CONSULTING';
 const WHATSAPP = 'https://wa.me/923286413624';
 const EMAIL    = 'mailto:mukasha.cse@gmail.com';
 
@@ -150,14 +150,14 @@ const SERVICES = [
 const PLANS = [
   {
     name: 'Student',
-    price: '$30', unit: '/ page',
+    price: '15k PKR', unit: '/ Thesis or Paper',
     desc: "Undergraduate & Master's level papers and assignments.",
     features: ['Up to 20 pages', '2 free revisions', 'Plagiarism report included', '5-day delivery'],
     cta: 'Get started', featured: false,
   },
   {
     name: 'Researcher',
-    price: '$55', unit: '/ page',
+    price: '20k PKR', unit: '/ Paper',
     desc: 'PhD theses, journal articles, and advanced research work.',
     features: ['Unlimited pages', '5 free revisions', 'Data analysis included', '7-day delivery'],
     cta: 'Get started', featured: true,
@@ -185,7 +185,7 @@ const TESTIMONIALS = [
 ];
 
 const STATS = [
-  { num:'500+', label:'Projects delivered' },
+  { num:'70+', label:'Projects delivered' },
   { num:'98%',  label:'Client satisfaction' },
   { num:'15+',  label:'Subject areas' },
   { num:'72h',  label:'Fastest turnaround' },
@@ -293,7 +293,7 @@ function ContactSection() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    const body = `Hi ScholarPro,%0A%0AName: ${form.name}%0AEmail: ${form.email}%0AService: ${form.service}%0ADeadline: ${form.deadline}%0A%0AMessage: ${form.message}`;
+    const body = `Hi RESEARCH EDGE CONSULTING,%0A%0AName: ${form.name}%0AEmail: ${form.email}%0AService: ${form.service}%0ADeadline: ${form.deadline}%0A%0AMessage: ${form.message}`;
     window.open(`${WHATSAPP}?text=${body}`, '_blank');
     setSent(true);
     setTimeout(() => setSent(false), 4000);
@@ -321,7 +321,7 @@ function ContactSection() {
               <span className="w-9 h-9 rounded-xl bg-blue-50 flex items-center justify-center">
                 <i className="ti ti-mail text-navy text-lg" aria-hidden="true"></i>
               </span>
-              hello@scholarpro.com
+              mukasha.cse@gmail.com
             </a>
             <div className="flex items-center gap-3">
               <span className="w-9 h-9 rounded-xl bg-gold/10 flex items-center justify-center">
@@ -399,8 +399,11 @@ function App() {
       {/* ── NAV ── */}
       <header className={`sticky top-0 z-50 transition-shadow ${scrolled ? 'shadow-sm' : ''} bg-parchment/95 backdrop-blur`}>
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#" className="font-display font-bold text-navy text-xl tracking-tight">
-            Scholar<span className="text-gold">Pro</span>
+          <a href="#" className="flex items-center gap-3">
+            <img src="logo.jpeg" alt="RESEARCH EDGE CONSULTING logo" className="h-10 w-auto rounded-xl shadow-sm" />
+            <span className="font-display font-bold text-navy text-xl tracking-tight">
+              RESEARCH <span className="text-gold">EDGE</span> CONSULTING
+            </span>
           </a>
           <nav className="hidden md:flex items-center gap-6">
             {NAV.map(l => (
@@ -442,7 +445,7 @@ function App() {
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-14 text-center">
         <div className="fade-up inline-flex items-center gap-2 text-xs font-medium bg-gold/10 text-amber-700 px-3 py-1.5 rounded-full mb-6">
           <i className="ti ti-rosette-discount-check text-base" aria-hidden="true"></i>
-          Trusted by 500+ students &amp; researchers worldwide
+          Trusted by 50+ students &amp; researchers worldwide
         </div>
         <h1 className="fade-up-2 font-display text-4xl sm:text-5xl text-navy leading-tight mb-5 max-w-3xl mx-auto">
           Academic writing that <span className="gold-ul">earns the grade</span>
@@ -597,11 +600,14 @@ function App() {
       <footer className="border-t border-gray-200 bg-parchment">
         <div className="max-w-5xl mx-auto px-6 py-8">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-            <div>
-              <span className="font-display font-bold text-navy text-lg">Scholar<span className="text-gold">Pro</span></span>
-              <p className="text-xs text-gray-400 mt-1 max-w-xs">
-                Professional academic writing services for students and researchers worldwide.
-              </p>
+            <div className="flex items-center gap-3">
+              <img src="logo.jpeg" alt="RESEARCH EDGE CONSULTING logo" className="h-10 w-auto rounded-xl shadow-sm" />
+              <div>
+                <span className="font-display font-bold text-navy text-lg">RESEARCH <span className="text-gold">EDGE</span> CONSULTING</span>
+                <p className="text-xs text-gray-400 mt-1 max-w-xs">
+                  Professional academic writing services for students and researchers worldwide.
+                </p>
+              </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 text-xs text-gray-400">
               {NAV.map(l => (
@@ -613,7 +619,7 @@ function App() {
             </div>
           </div>
           <div className="border-t border-gray-200 mt-6 pt-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
-            <span>© 2026 ScholarPro. All rights reserved.</span>
+            <span>© 2026 RESEARCH EDGE CONSULTING. All rights reserved.</span>
             <span className="flex items-center gap-1">
               <i className="ti ti-shield-check text-teal-500 text-sm" aria-hidden="true"></i>
               100% confidential · Plagiarism-free guarantee
